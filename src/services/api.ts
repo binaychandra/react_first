@@ -12,7 +12,7 @@ const handleApiResponse = async <T>(response: Response): Promise<T> => {
 
 export const fetchPredictionData = async (): Promise<PredictionData> => {
   try {
-    const response = await fetch(`${BASE_URL}/get_prediction`, {
+    const response = await fetch(`${BASE_URL}/get_prediction_from_databricks`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
